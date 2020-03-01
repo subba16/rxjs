@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { AppService } from "../app.service";
-import { Observable } from "rxjs";
-import { switchMap,map,filter, debounceTime, distinctUntilChanged } from "rxjs/operators";
+import { Observable, fromEvent } from "rxjs";
+import { switchMap,map,filter, debounceTime, distinctUntilChanged, take } from "rxjs/operators";
 import { HttpClient } from "@angular/common/http";
 
 
@@ -16,7 +16,13 @@ export class DebounceComponent implements OnInit {
   }
 
   searchTerm:string;
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const source = fromEvent(document,'click');
+    source.pipe(take(1))
+    .subscribe(()=> console.log('click on document'));
+
+
+  }
    
   search(text$: Observable<string>): Observable<string[]> {
     return text$.pipe(
