@@ -3,10 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   // <app-of-from></app-of-from>
+// <app-map-tap></app-map-tap>
+// 
   template:     
   `
   
-<app-map-tap></app-map-tap>
+<app-share></app-share>
 
 
   ` ,
