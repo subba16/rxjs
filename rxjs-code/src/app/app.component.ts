@@ -4,12 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   // <app-of-from></app-of-from>
 // <app-map-tap></app-map-tap>
-// 
+// <app-share></app-share>
+//<app-switchmap></app-switchmap>
+// app-debounce
   template:     
   `
   
-<app-share></app-share>
-
+<app-debounce> </app-debounce>
 
   ` ,
   styleUrls: ['./app.component.css']

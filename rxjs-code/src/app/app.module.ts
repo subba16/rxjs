@@ -7,19 +7,26 @@ import { OfFromComponent } from './of-from/of-from.component';
 import { MapTapComponent } from './map-tap/map-tap.component';
 import { ShareComponent } from './share/share.component';
 import {NgBusyModule} from 'ng-busy';
+import { SwitchmapComponent } from './switchmap/switchmap.component';
+import { DebounceComponent } from './debounce/debounce.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     OfFromComponent,
     MapTapComponent,
-    ShareComponent
+    ShareComponent,
+    SwitchmapComponent,
+    DebounceComponent
+     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgBusyModule
+    NgBusyModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
