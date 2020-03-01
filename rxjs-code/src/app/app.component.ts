@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 // <app-share></app-share>
 //<app-switchmap></app-switchmap>
 // <app-debounce> </app-debounce>
+// <app-mergemap></app-mergemap>
   template:     
   `
-  <app-mergemap></app-mergemap>
+  
+  <app-forkjoin> </app-forkjoin>
 
 
   ` ,

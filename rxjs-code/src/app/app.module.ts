@@ -11,6 +11,7 @@ import { SwitchmapComponent } from './switchmap/switchmap.component';
 import { DebounceComponent } from './debounce/debounce.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { MergemapComponent } from './mergemap/mergemap.component';
+import { ForkjoinComponent } from './forkjoin/forkjoin.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MergemapComponent } from './mergemap/mergemap.component';
     ShareComponent,
     SwitchmapComponent,
     DebounceComponent,
-    MergemapComponent
+    MergemapComponent,
+    ForkjoinComponent
      
   ],
   imports: [
