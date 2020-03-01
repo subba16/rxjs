@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
 // <app-map-tap></app-map-tap>
 // <app-share></app-share>
 //<app-switchmap></app-switchmap>
-// app-debounce
+// <app-debounce> </app-debounce>
   template:     
   `
-  
-<app-debounce> </app-debounce>
+  <app-mergemap></app-mergemap>
+
 
   ` ,
   styleUrls: ['./app.component.css']

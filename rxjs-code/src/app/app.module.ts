@@ -10,6 +10,7 @@ import {NgBusyModule} from 'ng-busy';
 import { SwitchmapComponent } from './switchmap/switchmap.component';
 import { DebounceComponent } from './debounce/debounce.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { MergemapComponent } from './mergemap/mergemap.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     MapTapComponent,
     ShareComponent,
     SwitchmapComponent,
-    DebounceComponent
+    DebounceComponent,
+    MergemapComponent
      
   ],
   imports: [
